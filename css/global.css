@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  width: 100%;
+  background-color: #50e3c2;
+}
+main {
+  position: relative;
+  width: 100%;
+  background-color: #f5a623;
+}
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #8ed12c;
+}
