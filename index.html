@@ -15,6 +15,12 @@
       defer
     ></script>
 
+    <!-- SUIT Variable font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/global.css" />
@@ -34,41 +40,79 @@
           <div class="swiper swiperVisual">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <source
-                  media="(min-width: 640px)"
-                  srcset="img/main/main_visual/main_visual01.jpg"
-                />
-                <img
-                  src="img/main/main_visual/main_visual01_m.jpg"
-                  alt="첫 번째 슬라이드 이미지"
-                  class="slide-image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 640px)"
+                    srcset="img/main/main_visual/main_visual01.jpg"
+                  />
+                  <img
+                    src="img/main/main_visual/main_visual01_m.jpg"
+                    alt="첫 번째 슬라이드 이미지"
+                    class="slide-image"
+                  />
+                </picture>
+                <div class="visual-txt-wrap">
+                  <h2 class="txtani">
+                    함께라서 힘이 되는 좋은 이웃<br />
+                    <span>서울시각장애인복지관 </span>
+                  </h2>
+                  <h6 class="txtani">
+                    다같이 함께하는 사회구현을 위해<br class="mo" />항상 노력과
+                    봉사하는 정신으로 임하겠습니다.
+                  </h6>
+                </div>
               </div>
               <div class="swiper-slide">
-                <source
-                  media="(min-width: 640px)"
-                  srcset="img/main/main_visual/main_visual02.jpg"
-                />
-                <img
-                  src="img/main/main_visual/main_visual02_m.jpg"
-                  alt="두 번째 슬라이드 이미지"
-                  class="slide-image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 640px)"
+                    srcset="img/main/main_visual/main_visual02.jpg"
+                  />
+                  <img
+                    src="img/main/main_visual/main_visual02_m.jpg"
+                    alt="두 번째 슬라이드 이미지"
+                    class="slide-image"
+                  />
+                </picture>
+                <div class="visual-txt-wrap">
+                  <h2 class="txtani">
+                    기억할게요. 당신은<br />
+                    <span>우리에게 소중한 사람인 걸 </span>
+                  </h2>
+                  <h6 class="txtani">
+                    사랑의 나눔을 기다립니다.<br class="mo" />문의 02-3433-3688
+                  </h6>
+                </div>
               </div>
               <div class="swiper-slide">
-                <source
-                  media="(min-width: 640px)"
-                  srcset="img/main/main_visual/main_visual03.jpg"
-                />
-                <img
-                  src="img/main/main_visual/main_visual03_m.jpg"
-                  alt="세 번째 슬라이드 이미지"
-                  class="slide-image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 640px)"
+                    srcset="img/main/main_visual/main_visual03.jpg"
+                  />
+                  <img
+                    src="img/main/main_visual/main_visual03_m.jpg"
+                    alt="세 번째 슬라이드 이미지"
+                    class="slide-image"
+                  />
+                </picture>
+                <div class="visual-txt-wrap">
+                  <h2 class="txtani">
+                    시각장애인에게<br />
+                    <span>희망의 빛이 되는 복지관 </span>
+                  </h2>
+                  <h6 class="txtani">
+                    서울시각장애인복지관 홈페이지를 <br class="mo" />방문해 주신
+                    여러분을 진심으로 환영합니다.
+                  </h6>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-navi">
+              <div class="custom-prev"></div>
+              <div class="custom-stop-play"></div>
+              <div class="custom-next"></div>
+            </div>
           </div>
         </div>
         <div class="main_category"></div>

@@ -1,16 +1,27 @@
 const swiperVisual = new Swiper(".swiperVisual", {
-    spaceBetween: 30,
+    spaceBetween: 150,
     centeredSlides: true,
     autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".custom-next",
+        prevEl: ".custom-prev",
     },
+});
+
+const toggleBtn = document.querySelector(".custom-stop-play");
+let isPaused = false;
+
+toggleBtn.addEventListener("click", () => {
+    if (isPaused) {
+        swiperVisual.autoplay.start();
+        toggleBtn.classList.remove(".playing");
+    }
+    else {
+        swiperVisual.autoplay.stop();
+        toggleBtn.classList.add(".playing");
+    }
+    isPaused = !isPaused
 });

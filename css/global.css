@@ -1,4 +1,204 @@
 @charset "utf-8";
+:root {
+  --font-type01: "SUITE", "맑은 고딕", dotum, sans-serif;
+}
+:root {
+  --transparent: transparent;
+  --point-white: #fff;
+  --point-color01: #ffb648;
+  --point-color02: #97a9eb;
+  --point-color03: #53c6ea;
+  --point-color04: #ff93ce;
+  --point-color05: #ffb648;
+  --point-color06: rgba(238, 117, 184, 0.5);
+  --point-color07: #ffd76f;
+  --point-color08: #8ed3f7;
+  --point-color09: #c8ccfa;
+  --point-color10: #ffc927;
+  --point-color11: #fff2f7;
+  --point-color12: #e8f7ff;
+  --point-color13: #f3fcec;
+  --point-color14: #ffbf5e;
+  --point-color15: #ffa566;
+  --point-color16: #4ca6fa;
+  --point-color17: #ffc289;
+  --point-color18: #ffdf8c;
+  --point-color19: #ffbbce;
+  --point-color20: #90cdfa;
+  --point-color21: #cab7ff;
+  --point-color22: #ace3ef;
+  --point-color23: #92ccfc;
+  --point-color24: #8bdcf5;
+  --point-color25: #ffcb7d;
+  --point-color26: #bcb3f4;
+  --point-color27: #f0a2bb;
+  --point-color28: #82dea7;
+  --point-color29: #8cabf2;
+  --point-color30: #85ccf0;
+  --point-color31: #79c7d2;
+  --point-color32: #3ab64a;
+  --point-color33: #cea43a;
+  --point-color34: #3a5db6;
+  --point-color35: #e64f46;
+  --point-color36: #51bcd3;
+  --point-color37: #ff8282;
+  --point-color38: #c791e0;
+  --point-color39: #61cc85;
+  --point-color40: #c1abff;
+  --point-color41: #ff5959;
+  --point-color42: #53c6ca;
+  --point-color43: #fa6d6d;
+  --point-color44: #a2df54;
+  --point-color45: #a5db60;
+  --border-color01: #ddd;
+  --border-color02: #ccc;
+  --border-color03: #eee;
+  --border-color04: #d9d9d9;
+  --black-color00: #000;
+  --black-color01: #111;
+  --black-color02: #222;
+  --black-color03: #333;
+  --black-color04: #444;
+  --black-color05: #555;
+  --black-color06: #666;
+  --black-color07: #777;
+  --black-color08: #888;
+  --black-color09: #999;
+  --black-color10: #aaa;
+  --gray-bg: #f5f5f5;
+  --gray-bg02: #f8f8f8;
+  --point-bg: #fcfaf4;
+  --point-bg02: #fff6f9;
+  --point-bg03: #fffbec;
+  --point-bg04: #f0f8fb;
+  --point-bg05: #f8fcfe;
+  --point-bg06: #f9f8ff;
+  --point-bg07: #fff4f4;
+  --font-type01: "SUITE", "맑은 고딕", dotum, sans-serif;
+  --font-type02: "Inter", "SUITE", "맑은 고딕", dotum, sans-serif;
+  --font-type02: "Poppins", "SUITE", "맑은 고딕", dotum, sans-serif;
+  --filter-white: brightness(0) invert(1);
+  --filter-black: brightness(0);
+  --title-54: 54px;
+  --title-50: 50px;
+  --title-48: 48px;
+  --title-42: 42px;
+  --title-40: 40px;
+  --title-32: 32px;
+  --title-30: 30px;
+  --title-28: 28px;
+  --title-26: 26px;
+  --title-24: 24px;
+  --title-22: 22px;
+  --title-20: 20px;
+  --title-18: 18px;
+  --title-17: 17px;
+  --title-16: 16px;
+}
+
+@media screen and (max-width: 1480px) {
+  :root {
+    --title-54: 50px;
+    --title-50: 46px;
+    --title-48: 44px;
+    --title-42: 40px;
+    --title-40: 38px;
+    --title-32: 30px;
+    --title-30: 28px;
+    --title-28: 26px;
+    --title-26: 25px;
+    --title-24: 23px;
+    --title-22: 21px;
+    --title-20: 19px;
+    --title-18: 17px;
+    --title-16: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  :root {
+    --title-54: 46px;
+    --title-50: 42px;
+    --title-48: 40px;
+    --title-42: 38px;
+    --title-40: 36px;
+    --title-32: 28px;
+    --title-30: 26px;
+    --title-28: 25px;
+    --title-26: 24px;
+    --title-24: 22px;
+    --title-22: 19px;
+    --title-20: 18px;
+    --title-18: 16px;
+    --title-17: 16px;
+  }
+}
+@media screen and (max-width: 860px) {
+  :root {
+    --title-54: 42px;
+    --title-50: 38px;
+    --title-48: 36px;
+    --title-42: 35px;
+    --title-40: 34px;
+    --title-32: 26px;
+    --title-30: 24px;
+    --title-28: 23px;
+    --title-26: 22px;
+    --title-24: 21px;
+    --title-22: 18px;
+    --title-20: 17px;
+    --title-18: 15px;
+    --title-17: 15px;
+    --title-16: 14px;
+  }
+}
+@media screen and (max-width: 640px) {
+  :root {
+    --title-54: 38px;
+    --title-50: 34px;
+    --title-48: 32px;
+    --title-42: 31px;
+    --title-40: 30px;
+    --title-32: 25px;
+    --title-30: 23px;
+    --title-28: 22px;
+    --title-26: 21px;
+    --title-24: 20px;
+    --title-22: 17px;
+    --title-20: 16px;
+    --title-18: 14px;
+    --title-17: 14px;
+    --title-16: 12px;
+  }
+}
+@media screen and (max-width: 479px) {
+  :root {
+    --title-54: 34px;
+    --title-50: 30px;
+    --title-48: 29px;
+    --title-42: 28px;
+    --title-40: 27px;
+    --title-32: 24px;
+    --title-30: 22px;
+    --title-28: 21px;
+    --title-26: 20px;
+    --title-24: 19px;
+    --title-22: 16px;
+    --title-20: 15px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-style: normal;
+  font-size: 12px;
+  font-family: var(--font-type01, inherit);
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+  line-height: 1.4;
+}
 
 .wrap {
   width: 100%;
@@ -18,4 +218,21 @@ footer {
   position: relative;
   width: 100%;
   background-color: #8ed12c;
+}
+
+/* 반응형 */
+.pc {
+  display: none;
+}
+.mo {
+  display: block;
+}
+
+@media screen and (min-width: "680px") {
+  .pc {
+    display: block;
+  }
+  .mo {
+    display: none;
+  }
 }
