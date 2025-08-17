@@ -1,5 +1,5 @@
 const swiperVisual = new Swiper(".swiperVisual", {
-    spaceBetween: 150,
+    spaceBetween: 300,
     centeredSlides: true,
     autoplay: {
         delay: 5000,

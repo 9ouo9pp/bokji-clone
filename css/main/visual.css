@@ -75,6 +75,23 @@
     transform: translateY(0);
   }
 }
+@media screen and (min-width: 680px) {
+  .visual-txt-wrap {
+    position: absolute;
+    top: 10vw;
+    left: 10.42vw;
+  }
+  .visual-txt-wrap h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: -0.08em;
+  }
+
+  .visual-txt-wrap h6 {
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+}
 /* 슬라이드 txt end */
 
 /* 슬라이드 navi */
