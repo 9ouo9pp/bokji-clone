@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/main/main.css" />
     <link rel="stylesheet" href="css/main/visual.css" />
     <link rel="stylesheet" href="css/main/perticipation.css" />
+    <link rel="stylesheet" href="css/main/share.css" />
     <link rel="stylesheet" href="css/footer/footer.css" />
 
     <!-- js -->
@@ -35,12 +36,14 @@
     <script src="js/visual.js" defer></script>
     <script src="js/welfare.js" defer></script>
     <script src="js/perticipation.js" defer></script>
+    <script src="js/share.js" defer></script>
+    <script src="js/swiperShare.js" defer></script>
   </head>
   <body>
     <div class="wrap">
       <header class="header"></header>
       <main class="main">
-        <div class="main_visual">
+        <div class="main-visual">
           <div class="swiper swiperVisual">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -119,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="main_category" aria-label="주요 카테고리">
+        <div class="main-category" aria-label="주요 카테고리">
           <nav class="width-custom" aria-labelledby="main_category">
             <ul>
               <li>
@@ -206,7 +209,7 @@
             </ul>
           </nav>
         </div>
-        <div class="main_welfare">
+        <div class="main-welfare">
           <div class="width-custom">
             <div class="news">
               <div class="main-title" tabindex="0">
@@ -444,7 +447,7 @@
             </div>
           </div>
         </div>
-        <div class="main_perticipation">
+        <div class="main-perticipation">
           <div class="width-custom">
             <div class="main-title">
               <span
@@ -558,10 +561,294 @@
             <div class="per-custom-next"></div>
           </div>
         </div>
-        <div class="main_share"></div>
-        <div class="main_business"></div>
-        <div class="main_event"></div>
-        <div class="main_agency"></div>
+        <div class="main-share">
+          <div class="width-custom">
+            <div class="main-title">
+              <span
+                ><img
+                  src="img/main/main_share/main_share_icon01.svg"
+                  alt="공유 아이콘"
+                  tabindex="0"
+              /></span>
+              <h2 tabindex="0">함께 <strong>공유</strong>해요</h2>
+              <h6 tabindex="0">
+                서울시각장애인복지관의 행복한 이야기를 전합니다.
+              </h6>
+            </div>
+            <div class="link">
+              <ul class="tab-list" tabindex="0">
+                <li class="on"><a href="#">갤러리</a></li>
+                <li><a href="#">동영상</a></li>
+                <li><a href="#">나눔소식</a></li>
+              </ul>
+            </div>
+
+            <ul class="tab-content">
+              <li class="tab-item on" title="갤러리">
+                <div class="swiper swiperShare">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/gallery/20250630135502_3478.jpg"
+                          alt="2025장애인돌봄휴가제"
+                        />
+                      </div>
+                      <dl>
+                        <dt>2025장애인돌봄휴가제</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/gallery/20250630141632_9867.jpg"
+                          alt="1인가구 건강지원[우리동네 예체능 실시]"
+                        />
+                      </div>
+                      <dl>
+                        <dt>1인가구 건강지원[우리동네 예체능 실시]</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/gallery/20250630145938_5858.jpg"
+                          alt="1인가구 요리교실[맛 잇는 식탁]진행"
+                        />
+                      </div>
+                      <dl>
+                        <dt>1인가구 요리교실[맛 잇는 식탁]진행</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/gallery/20250630161302_1012.jpg"
+                          alt="1인가구자조모임[도란도란][한우리]활동"
+                        />
+                      </div>
+                      <dl>
+                        <dt>1인가구자조모임[도란도란][한우리]활동</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/gallery/20250702124730_7844.jpg"
+                          alt="함께라서 힘이되는 좋은 이웃 [SG]서울보증보험"
+                        />
+                      </div>
+                      <dl>
+                        <dt>함께라서 힘이되는 좋은 이웃 [SG]서울보증보험</dt>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-item" title="동영상">
+                <div class="swiper swiperShare">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20250520152020_2331.png"
+                          alt="송파구 장애인축제"
+                        />
+                      </div>
+                      <dl>
+                        <dt>서포터즈 취재일기! 송파구 장애인축제 다녀오다!!</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20250424112555_4252.png"
+                          alt="장애인돌봄가족휴가제"
+                        />
+                      </div>
+                      <dl>
+                        <dt>
+                          서시복 2025년 장애인돌봄가족휴가제 참여가정 추첨 결과
+                        </dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20241223163149_1215.jpg"
+                          alt="2025년 사업설명회 라이브"
+                        />
+                      </div>
+                      <dl>
+                        <dt>2025년 사업설명회 라이브</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20241216115515_2508.png"
+                          alt="조향사 양성교육 이야기"
+                        />
+                      </div>
+                      <dl>
+                        <dt>
+                          2Z(투지) 밴드와 함께한 시각장애인 조향사 양성교육
+                          이야기 속으로!!
+                        </dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20241104141120_1661.jpg"
+                          alt="환경공동체 '마을환경지킴이"
+                        />
+                      </div>
+                      <dl>
+                        <dt>
+                          [2024] 시각장애인, 비장애인 주민 환경공동체
+                          '마을환경지킴이'
+                        </dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20240919212448_1358.jpg"
+                          alt="스몰스파크"
+                        />
+                      </div>
+                      <dl>
+                        <dt>2024 스몰스파크, 풀라이트 팀을 소개합니다!</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20240723153303_4724.png"
+                          alt="실습생과 함께하는 건강체조"
+                        />
+                      </div>
+                      <dl>
+                        <dt>실습생과 함께하는 건강체조 "시원해GYM" 영상</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/video/20240718115813_1966.png"
+                          alt="복지관 이용자 휴게실 이용"
+                        />
+                      </div>
+                      <dl>
+                        <dt>복지관 이용자 휴게실 이용 및 수칙 안내 영상</dt>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-item" title="나눔소식">
+                <div class="swiper swiperShare">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20240905114331_9606.jpg"
+                          alt="함께하는 마음, 중소기업중앙회"
+                        />
+                      </div>
+                      <dl>
+                        <dt>함께하는 마음, 중소기업중앙회</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250312181710_9346.png"
+                          alt="1월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>1월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250320114719_2092.png"
+                          alt="2월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>2월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250414171350_1453.png"
+                          alt="3월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>3월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250523115613_8529.png"
+                          alt="4월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>4월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250617141901_1106.png"
+                          alt="5월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>5월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250723141520_2842.png"
+                          alt="6월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>6월 후원소식</dt>
+                      </dl>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="thumb">
+                        <img
+                          src="img/upload/share/sharing/20250804134955_5582.jpg"
+                          alt="7월 후원소식"
+                        />
+                      </div>
+                      <dl>
+                        <dt>7월 후원소식</dt>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="per-custom-prev-2"></div>
+            <div class="per-custom-next-2"></div>
+          </div>
+        </div>
+        <div class="main-business"></div>
+        <div class="main-event"></div>
+        <div class="main-agency"></div>
       </main>
       <footer class="footer"></footer>
     </div>

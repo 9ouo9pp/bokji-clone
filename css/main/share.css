@@ -1,0 +1,110 @@
+/* share =================================================== */
+.main-share {
+  position: relative;
+  padding: 120px 0 65px;
+  background: var(--point-bg01);
+}
+.main-share .width-custom {
+}
+
+/* title */
+.main-share .main-title strong {
+  color: var(--point-color02);
+}
+.main-share .link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 20px;
+}
+.main-share .tab-list {
+  display: inline-flex;
+  margin: 0 auto;
+  background: var(--gray-bg);
+  font-size: var(--title-20);
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 140px;
+}
+.main-share .tab-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+.main-share .tab-list li.on {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--point-color02);
+  border-radius: 140px;
+}
+.main-share .tab-list li.on a {
+  color: #fff;
+}
+.main-title h6 {
+  font-size: 14px;
+  letter-spacing: -0.08em;
+  font-weight: 400;
+}
+
+/* swiperShare ================================================== */
+
+.swiperShare {
+  width: 100%;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.swiperShare .swiper-slide {
+  position: relative;
+  height: auto;
+  text-align: center;
+  font-size: 18px;
+  /* background: #444; */
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 20px 20px 24px;
+  border-radius: 16px;
+  border: 1px solid var(--g);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperShare .swiper-slide .thumb {
+  width: 100%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.swiperShare .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiperShare dt {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+/* navigation 버튼 ================================================== */
+
+/* tab 작동 css */
+.tab-content .tab-item {
+  display: none;
+}
+.tab-content .tab-item.on {
+  display: block;
+}
+/* tab 작동 css end*/
+/* share end =============================================== */

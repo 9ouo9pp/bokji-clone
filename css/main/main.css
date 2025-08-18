@@ -1,7 +1,7 @@
 @charset "utf";
 
 /* category =================================================*/
-.main_category {
+.main-category {
   position: relative;
   width: 100%;
 
@@ -11,11 +11,11 @@
 
   /* background-color: aqua; */
 }
-.main_category nav {
+.main-category nav {
   width: calc(100% - 16px);
   padding: 16px 0;
 }
-.main_category ul {
+.main-category ul {
   height: 100%;
 
   display: grid;
@@ -25,7 +25,7 @@
   margin: 0 auto;
   /* background-color: black; */
 }
-.main_category ul li {
+.main-category ul li {
   position: relative;
 
   padding-top: 100%; /* 너비와 같은 높이(100%)를 만듭니다 */
@@ -37,7 +37,7 @@
   transition: all 0.4s;
 }
 
-.main_category ul li dl {
+.main-category ul li dl {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -49,68 +49,68 @@
   justify-content: center;
   gap: 8px;
 }
-.main_category dt {
+.main-category dt {
   height: 31px;
 }
-.main_category dt img {
+.main-category dt img {
   height: inherit;
   object-fit: contain;
 }
 @media screen and (min-width: 431px) {
-  .main_category dt {
+  .main-category dt {
     height: 40px;
   }
 }
 @media screen and (min-width: 640px) {
-  .main_category dt {
+  .main-category dt {
     height: 50px;
   }
-  .main_category ul {
+  .main-category ul {
     max-height: 200px;
     grid-template-columns: repeat(6, 1fr);
     gap: 40px;
   }
 }
-.main_category dd {
+.main-category dd {
   text-align: center;
   margin: 0 auto;
 }
 /* category end =============================================*/
 
 /* welfare ==================================================*/
-.main_welfare {
+.main-welfare {
   position: relative;
   width: 100%;
   padding-bottom: 70px;
 }
 
 /* title */
-.main_welfare .main-title {
+.main-welfare .main-title {
   position: relative;
   padding: 12px 0;
 }
-.main_welfare h3 {
+.main-welfare h3 {
   font-size: 143%;
   letter-spacing: -0.15em;
   font-weight: 700;
   color: var(--black-color03);
 }
-.main_welfare .main-title .tab-list {
+.main-welfare .main-title .tab-list {
   display: flex;
   gap: 2.6vw;
   padding: 12px 0;
 }
-.main_welfare .main-title .tab-list li {
+.main-welfare .main-title .tab-list li {
   font-size: 80%;
   font-weight: 500;
   color: var(--black-color05);
   cursor: pointer;
 }
-.main_welfare .tab-list > li.on {
+.main-welfare .tab-list > li.on {
   color: var(--black-color03);
   font-weight: 700;
 }
-.main_welfare .main-title .tab-list a {
+.main-welfare .main-title .tab-list a {
 }
 /* title end */
 /* content */
@@ -225,15 +225,15 @@
   .letter .welfare-contents {
     padding: 30px;
   }
-  .main_welfare .main-title .tab-list li {
+  .main-welfare .main-title .tab-list li {
     font-size: var(--title-20);
   }
 }
 @media screen and (min-width: 680px) {
-  .main_welfare {
+  .main-welfare {
     padding-bottom: 120px;
   }
-  .main_welfare h3 {
+  .main-welfare h3 {
     font-size: 200%;
   }
   .icon {
@@ -269,7 +269,7 @@
   .main-title {
     margin-bottom: 26px;
   }
-  .main_welfare .main-title {
+  .main-welfare .main-title {
     justify-content: space-between;
     align-items: center;
   }
@@ -282,10 +282,10 @@
   .welfare-contents dd {
     display: inline-block;
   }
-  .main_welfare .main-title .tab-list {
+  .main-welfare .main-title .tab-list {
     padding: 0 12px;
   }
-  .main_welfare .main-title .tab-list li {
+  .main-welfare .main-title .tab-list li {
     font-size: var(--title-20);
   }
 
@@ -313,7 +313,7 @@
   .main-title {
     display: flex;
   }
-  .main_welfare .width-custom {
+  .main-welfare .width-custom {
     display: flex;
   }
   .letter .welfare-contents {
@@ -330,7 +330,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .main_welfare h3 {
+  .main-welfare h3 {
     font-size: 230%;
   }
   .icon {

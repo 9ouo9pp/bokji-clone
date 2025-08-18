@@ -192,6 +192,8 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html,
 body {
   margin: 0;
   padding: 0;
@@ -212,6 +214,7 @@ li {
 a {
   color: #000;
   text-decoration: none;
+  font-size: var(--title-20);
 }
 img {
   vertical-align: middle;
