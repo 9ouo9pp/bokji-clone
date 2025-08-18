@@ -81,6 +81,7 @@
 .main_welfare {
   position: relative;
   width: 100%;
+  padding-bottom: 120px;
 }
 
 /* title */
@@ -90,6 +91,9 @@
 }
 .main_welfare h3 {
   font-size: 143%;
+  letter-spacing: -0.15em;
+  font-weight: 700;
+  color: var(--black-color03);
 }
 .main_welfare .main-title .tab-list {
   display: flex;
@@ -114,6 +118,9 @@
 }
 .welfare-contents .news-item-list {
   padding: 15px 25px;
+}
+.welfare-contents {
+  font-size: var(--title-20);
 }
 .welfare-contents .news-item-list li {
   display: flex;
@@ -141,7 +148,7 @@
   align-content: center;
   justify-self: center;
   color: var(--point-white);
-  font-size: 80%;
+  font-size: 60%;
   font-weight: 500;
   text-align: center;
   border-radius: 16px;
@@ -232,12 +239,14 @@
     border-width: 2px;
   }
   .letter {
+    position: relative;
     padding-top: 70px;
   }
   .letter .welfare-contents {
     padding: 35px;
     gap: 20px;
-    height: auto;
+
+    height: calc(100% - 81px);
   }
 }
 @media screen and (min-width: 1023px) {

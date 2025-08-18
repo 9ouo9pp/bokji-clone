@@ -230,12 +230,17 @@ header {
 main {
   position: relative;
   width: 100%;
-  background-color: #f5a623;
+  /* background-color: #f5a623; */
 }
 footer {
   position: relative;
   width: 100%;
   background-color: #8ed12c;
+}
+.main-title {
+  position: relative;
+  font-size: var(--title-20);
+  box-sizing: border-box;
 }
 
 /* 반응형 */
