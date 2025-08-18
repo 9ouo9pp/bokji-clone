@@ -187,6 +187,11 @@
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -198,6 +203,19 @@ body {
   letter-spacing: -0.02em;
   word-break: keep-all;
   line-height: 1.4;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
 }
 
 .wrap {
@@ -234,5 +252,18 @@ footer {
   }
   .mo {
     display: none;
+  }
+}
+
+.width-custom {
+  position: relative;
+  width: calc(100% - 60px);
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1023px) {
+  .width-custom {
+    width: calc(100% - 30px);
   }
 }

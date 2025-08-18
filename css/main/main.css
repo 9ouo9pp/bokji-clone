@@ -1,0 +1,324 @@
+@charset "utf";
+
+/* category =================================================*/
+.main_category {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: aqua; */
+}
+.main_category nav {
+  width: calc(100% - 16px);
+  padding: 16px 0;
+}
+.main_category ul {
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  margin: 0 auto;
+  /* background-color: black; */
+}
+.main_category ul li {
+  position: relative;
+
+  padding-top: 100%; /* 너비와 같은 높이(100%)를 만듭니다 */
+  height: 0; /* 콘텐츠가 높이에 영향을 주지 않도록 높이를 0으로 설정 */
+  border-radius: 12px;
+  text-align: center;
+
+  background-color: var(--point-bg);
+  transition: all 0.4s;
+}
+
+.main_category ul li dl {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main_category dt {
+  height: 31px;
+}
+.main_category dt img {
+  height: inherit;
+  object-fit: contain;
+}
+@media screen and (min-width: 431px) {
+  .main_category dt {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .main_category dt {
+    height: 50px;
+  }
+  .main_category ul {
+    max-height: 200px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+  }
+}
+.main_category dd {
+  text-align: center;
+  margin: 0 auto;
+}
+/* category end =============================================*/
+
+/* welfare ==================================================*/
+.main_welfare {
+  position: relative;
+  width: 100%;
+}
+
+/* title */
+.main_welfare .main-title {
+  position: relative;
+  padding: 12px 0;
+}
+.main_welfare h3 {
+  font-size: 143%;
+}
+.main_welfare .main-title .tab-list {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+}
+.main_welfare .main-title .tab-list a {
+  font-size: 90%;
+  font-weight: 700;
+  color: var(--black-color03);
+}
+/* title end */
+/* content */
+.welfare-contents {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--border-color01);
+  border-radius: 15px;
+}
+.welfare-contents .news-item {
+  width: 100%;
+}
+.welfare-contents .news-item-list {
+  padding: 15px 25px;
+}
+.welfare-contents .news-item-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-bg);
+}
+.welfare-contents .news-item-list li:last-child {
+  border-bottom: 0;
+}
+.welfare-contents dd {
+  display: none;
+}
+/* content날짜 모바일에서는 안보이게 함 */
+.welfare-contents .news-item-list li dl {
+  display: flex;
+}
+/* 각 텝메뉴의 아이콘 */
+.icon {
+  display: inline-block;
+  width: 65px;
+  height: 25px;
+
+  align-content: center;
+  justify-self: center;
+  color: var(--point-white);
+  font-size: 80%;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 16px;
+  background-color: var(--point-color06);
+}
+
+.welfare-contents .news-item {
+  display: none;
+}
+.welfare-contents .news-item.on {
+  display: block;
+}
+/* content end */
+
+/* letter */
+.letter {
+  position: relative;
+  width: 100%;
+  /* display: none; */
+  padding-top: 40px;
+}
+.letter .welfare-contents {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color01);
+  transition: all 0.4s;
+}
+.letter .thumb {
+  width: 27vw;
+  border: 4px solid var(--border-color01);
+  border-width: 2px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.letter .thumb img {
+  width: 100%;
+}
+.letter .info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.letter .info {
+  /* padding-left: 27px; */
+  font-size: 90%;
+}
+.letter .info dt {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+/* letter end */
+
+/* 반응형 */
+@media screen and (min-width: 480px) {
+  .letter .thumb {
+    width: 180px;
+    border-width: 2px;
+  }
+  .letter {
+    padding-top: 50px;
+  }
+  .letter .welfare-contents {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 680px) {
+  .main_welfare h3 {
+    font-size: 200%;
+  }
+  .icon {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+  }
+  .welfare-contents dd {
+    display: inline-block;
+  }
+  .welfare-contents .news-item-list {
+    padding: 15px 30px;
+  }
+  .letter .thumb {
+    width: 180px;
+    border-width: 2px;
+  }
+  .letter {
+    padding-top: 70px;
+  }
+  .letter .welfare-contents {
+    padding: 35px;
+    gap: 20px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .width-custom {
+    gap: 32px;
+  }
+  .main-title {
+    margin-bottom: 26px;
+  }
+  .main_welfare .main-title {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .welfare-contents dl {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .welfare-contents dd {
+    display: inline-block;
+  }
+  .main_welfare .main-title .tab-list {
+    padding: 0 12px;
+  }
+
+  .news {
+    width: calc(100% - 360px);
+  }
+  .news .welfare-contents {
+    height: calc(100% - 81px);
+  }
+  .news-item {
+    height: 100%;
+  }
+  .letter {
+    padding-top: 0;
+    width: 360px;
+  }
+  .letter .welfare-contents {
+    flex-direction: column;
+  }
+  .main-title {
+    display: flex;
+  }
+  .main_welfare .width-custom {
+    display: flex;
+  }
+  .letter .welfare-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .letter .thumb {
+    width: 100px;
+  }
+  .letter .thumb img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main_welfare h3 {
+    font-size: 230%;
+  }
+  .icon {
+    display: inline-block;
+    width: 65px;
+    height: 25px;
+  }
+  .welfare-contents .news-item-list {
+    padding: 16px 40px;
+  }
+  .letter .thumb {
+    width: 100px;
+    border: 4px solid var(--border-color01);
+    margin: 0 auto;
+  }
+  .letter .info {
+    padding-left: 0;
+  }
+}
+
+/* welfare end ==============================================*/
