@@ -242,7 +242,23 @@ footer {
   font-size: var(--title-20);
   box-sizing: border-box;
 }
-
+.main_title h2 {
+  font-size: 280%;
+  font-weight: 800;
+  color: var(--black-color03);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+@media screen and (max-width: 479px) {
+  .main_title h2 {
+    font-size: 175%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main_title h2 {
+    font-size: 250%;
+  }
+}
 /* 반응형 */
 .pc {
   display: none;
