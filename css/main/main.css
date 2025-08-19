@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 48px 0;
 
   /* background-color: aqua; */
 }
@@ -47,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
 }
 .main-category dt {
   height: 31px;
@@ -58,17 +59,22 @@
 }
 @media screen and (min-width: 431px) {
   .main-category dt {
-    height: 40px;
   }
 }
 @media screen and (min-width: 640px) {
-  .main-category dt {
-    height: 50px;
-  }
   .main-category ul {
-    max-height: 200px;
+  }
+  .main-category ul li {
+    height: 180px;
+    padding-top: 0;
+  }
+  .main-category dt {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main-category ul {
     grid-template-columns: repeat(6, 1fr);
-    gap: 40px;
   }
 }
 .main-category dd {
@@ -352,3 +358,295 @@
 }
 
 /* welfare end ==============================================*/
+
+/* business================================================= */
+.main-business {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7vw 0 8vw;
+
+  background-color: var(--point-bg03);
+}
+/* title */
+.main-business .main-title {
+  flex-direction: column;
+}
+.main-business .main-title strong {
+  color: var(--point-color10);
+}
+/* title end */
+
+/* icon */
+.main-business ul {
+  width: calc(100% - 16px);
+  padding: 24px 0;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.main-business ul li {
+  position: relative;
+
+  padding-top: 100%; /* 너비와 같은 높이(100%)를 만듭니다 */
+  height: 0; /* 콘텐츠가 높이에 영향을 주지 않도록 높이를 0으로 설정 */
+  border-radius: 12px;
+  text-align: center;
+
+  background-color: #fff;
+  transition: all 0.4s;
+}
+
+.main-business ul li dl {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main-business dt {
+  height: 31px;
+}
+.main-business dt img {
+  height: inherit;
+  object-fit: contain;
+}
+@media screen and (min-width: 431px) {
+  .main-business dt {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .main-business ul {
+  }
+  .main-business ul li {
+    height: 180px;
+    padding-top: 0;
+  }
+  .main-business dt {
+    height: 45px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .main-business .mo {
+    display: block;
+  }
+  .main-business .width-custom {
+    display: flex;
+  }
+  .main-business .main-title h6 {
+    padding-left: 4px;
+  }
+  .main-business dt {
+    width: 100%;
+    height: 100%;
+  }
+  .main-business ul {
+    max-height: 200px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+  }
+  .main-business ul li {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* 너비와 같은 높이(100%)를 만듭니다 */
+    height: 0; /* 콘텐츠가 높이에 영향을 주지 않도록 높이를 0으로 설정 */
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.4s;
+  }
+
+  .main-business ul li dl {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .main-business dt {
+    width: 100%;
+    height: 100%;
+  }
+  .main-business dt img {
+    height: inherit;
+    object-fit: contain;
+  }
+}
+.main-business dd {
+  text-align: center;
+  margin: 0 auto;
+}
+/* icon end*/
+/* business end============================================= */
+
+/* event =================================================== */
+.main-event {
+  position: relative;
+}
+.event-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.event-list {
+  width: 100%;
+}
+.main-event ul {
+  padding: 64px 0;
+  gap: 12px;
+}
+.main-event li {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  background: var(--point-color11);
+  padding: 23px 25px 28px;
+  box-sizing: border-box;
+}
+.main-event li::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 200px;
+  top: -16px;
+  right: -11%;
+  background: url(../../img/main/main_event/main_event_icon01.svg) no-repeat
+    center;
+  background-size: 100% auto;
+}
+.main-event li:nth-of-type(2) {
+  background: var(--point-color12);
+}
+.main-event li:nth-of-type(2)::before {
+  height: 140px;
+  background: url(../../img/main/main_event/main_event_icon02.svg) no-repeat
+    center;
+  background-size: auto 90%;
+  top: 50%;
+  right: -5%;
+  transform: translateY(-50%);
+}
+.main-event .main-title {
+  flex-direction: column;
+}
+.main-event .main-title p,
+.main-event .main-title h4 {
+  margin-top: 14px;
+}
+.main-event .main-title h4 {
+  font-size: 125%;
+  font-weight: 800;
+  color: var(--black-color04);
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+.main-event .main-title p {
+  font-size: 90%;
+  font-weight: 500;
+  color: var(--black-color07);
+  line-height: 1.45;
+  letter-spacing: -0.04em;
+}
+.main-event .more-btn {
+  display: block;
+  margin-top: 14px;
+}
+.main-event .more-btn span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 40px;
+  font-size: 95%;
+
+  font-weight: 500;
+  color: var(--black-color05);
+  border-radius: 100px;
+  background: var(--point-white);
+  transition: all 0.4s;
+}
+
+@media screen and (min-width: 480px) {
+  .main-event li {
+    padding: 30px 35px 45px;
+  }
+  .main-event li::before {
+    width: 260px;
+    height: 200px;
+  }
+  .main-event li:nth-of-type(2)::before {
+    height: 160px;
+  }
+  .main-event .more_btn span {
+    width: 100px;
+    height: 45px;
+  }
+  .main-event .main-title h4 {
+    font-size: 200%;
+  }
+  .main-event .main-title p {
+    font-size: 100%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .main-event li {
+    padding: 35px 40px 45px;
+  }
+  .main-event li::before {
+    width: 343px;
+    height: 265px;
+    top: -1%;
+    right: -3%;
+  }
+  .main-event li:nth-of-type(2)::before {
+    height: 227px;
+  }
+  .main-event .more_btn span {
+    width: 120px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .main-event li {
+    padding: 40px 45px 50px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .event-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-event li {
+    padding: 44px 50px 56px;
+  }
+  .main-event .more_btn span {
+    width: 130px;
+    height: 54px;
+    font-size: var(--title-20);
+  }
+}
+
+/* event end=============================================== */

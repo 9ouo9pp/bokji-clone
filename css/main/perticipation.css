@@ -26,12 +26,6 @@ h6 {
   color: var(--point-color04);
 }
 .main-perticipation .main-title h2 {
-  /* font-size: 280%; */
-  font-size: 160%;
-  font-weight: 800;
-  color: var(--black-color03);
-  line-height: 1.15;
-  letter-spacing: -0.04em;
 }
 .main-perticipation .main-title h6 {
   /* font-size: 120%; */
