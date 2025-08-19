@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: var(--point-color13);
+  padding: 0 0 70px;
+}
+/* 꽃 장식 */
+.footer:before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 37px;
+  background: url(../../img/footer/footer_vec01.svg) no-repeat center;
+  background-size: 100% auto;
+  top: -15%;
+  left: 8.2%;
+  z-index: 1;
+}
+@media screen and (max-width: 479px) {
+  .footer:before {
+    width: 20px;
+    top: -13%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer:before {
+    top: -15%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .footer:before {
+    top: -15%;
+  }
+}
+
+/* footer 배경 */
+.footer .ftr_path {
+  position: absolute;
+  top: -70px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* footer content */
+/* 1) top */
+.top {
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+}
+@media screen and (max-width: 860px) {
+  .top {
+    display: block;
+    gap: 8px;
+  }
+}
+.link-list {
+  display: flex;
+  font-size: var(--title-20);
+  gap: 30px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 1023px) {
+  .link-list {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .link-list {
+    padding: 20px 0 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  .link-list {
+    gap: 20px;
+  }
+}
+.link-list li {
+  font-size: 85%;
+  font-weight: 400;
+  color: var(--black-color05);
+}
+/* 1) top end */
+/* 2) agree */
+.footer .agree {
+  position: relative;
+  background: var(--point-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  margin-top: 50px;
+  padding: 0 40px;
+}
+@media screen and (max-width: 1200px) {
+  .footer .agree {
+    padding: 0 35px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer .agree {
+    padding: 20px 30px;
+    display: block;
+    height: auto;
+  }
+}
+@media screen and (max-width: 860px) {
+  .footer .agree {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer .agree {
+    margin-top: 30px;
+  }
+}
+
+/* cs-center */
+.cs-center {
+  display: inline-flex;
+  align-items: center;
+}
+@media screen and (max-width: 860px) {
+  .cs-center {
+    display: block;
+  }
+}
+
+/* agree > cs-center > agree-list */
+.agree-list {
+  display: inline-flex;
+  margin-right: 37px;
+}
+.agree-list li {
+  position: relative;
+}
+.agree-list li:not(:last-child) {
+  margin-right: 64px;
+}
+.agree-list li dl {
+  display: inline-flex;
+  font-size: var(--title-20);
+  align-items: flex-end;
+  gap: 8px;
+}
+.agree-list li dl dd {
+  font-weight: 600;
+  color: var(--black-color03);
+  font-family: var(--font-type02, inherit);
+}
+.agree-list li dl dd a {
+}
+.agree-list li dl dt {
+  font-size: 85%;
+  font-weight: 500;
+  color: var(--black-color05);
+}
+@media screen and (max-width: 1200px) {
+  .agree-list {
+    margin-right: 25px;
+  }
+  .agree-list li:not(:last-child) {
+    margin-right: 44px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .agree-list {
+    margin: 0 0 10px;
+  }
+  .agree-list li:not(:last-child) {
+    margin-right: 34px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .agree-list {
+    display: block;
+  }
+  .agree-list li:not(:last-child) {
+    margin: 0 0 7px;
+  }
+}
+
+/* agree > cs-center > bullet-list */
+.bullet-list {
+  font-size: var(--title-20);
+}
+.bullet-list > li {
+  position: relative;
+  font-size: 75%;
+  font-weight: 400;
+  color: var(--black-color05);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+/* agree > black-lsit */
+.black-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* 2) agree end */
+
+/* 3) info */
+.info {
+  padding: 24px 0 0 8px;
+}
+/* 3) info > exp-list*/
+.exp-list {
+}
+.exp-list dl {
+  display: inline-flex;
+  font-size: var(--title-20);
+}
+.exp-list dl:where(dt, dd) {
+  font-size: 85%;
+  font-weight: 400;
+  color: var(--black-color08);
+  line-height: 1.8;
+}
+/* copy */
+.exp-list .copy {
+  margin-top: 17px;
+}
+.exp-list dl:not(:last-child) {
+  margin-right: 35px;
+}
+.exp-list .copy dl:where(dl, dd) {
+  font-size: 80%;
+}
+.exp-list .copy dl dt + dd {
+  padding-left: 40px;
+}
+/* 반응형 */
+@media screen and (max-width: 1023px) {
+  .exp-list dl:not(:last-child) {
+    margin-right: 30px;
+  }
+  .exp-list .copy dl dt + dd {
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .exp-list dl:not(:last-child) {
+    margin-right: 25px;
+  }
+  .exp-list .copy dl {
+    display: block;
+  }
+  .exp-list .copy dl dt + dd {
+    padding: 10px 0 0;
+  }
+}
+/* 3) info > exp-list end*/
+/* 3) info > family-site*/
+.family-site {
+  position: relative;
+  display: inline-block;
+  font-size: var(--title-20);
+  z-index: 5;
+}
+.family-site dt span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 231px;
+  border: 1px solid var(--black-color10);
+  font-size: 90%;
+  font-weight: 500;
+  color: var(--black-color05);
+  padding: 0 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.family-site dd {
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 0;
+  width: 100%;
+  border: 1px solid var(--black-color10);
+  background: var(--point-color13);
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 80%;
+  font-weight: 400;
+  color: var(--black-color09);
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.family-site dd a {
+  display: block;
+  padding: 5px 0;
+}
+@media screen and (max-width: 1023px) {
+  .family-site dt span {
+    width: 200px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .family-site {
+    margin-top: 30px;
+  }
+  .family-site dt span {
+    width: 180px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .family-site dd {
+    border-radius: 4px;
+  }
+  .family-site dt span {
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .family-site dt span {
+    width: 160px;
+    height: 42px;
+  }
+}
+/* 3) info end */
+/* footer content end */
