@@ -1,8 +1,8 @@
-const swiper = new Swiper(".swiperPerticipation", {
+const swiper = new Swiper(".swiperParticipation", {
     spaceBetween: 30,
     navigation: {
-        nextEl: '.per-custom-next',
-        prevEl: '.per-custom-prev',
+        nextEl: '.participation-next',
+        prevEl: '.participation-prev',
     },
     // 반응형 설정
     breakpoints: {

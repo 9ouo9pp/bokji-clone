@@ -4,9 +4,9 @@ const swiper2 = new Swiper(".swiperShare", {
     slidesPerView: 1.2,
     centeredSlides: true,
     spaceBetween: 40,
-    pagination: {
-
-        clickable: true,
+    navigation: {
+        nextEl: '.share-next',
+        prevEl: '.share-prev',
     },
     breakpoints: {
         1300: {

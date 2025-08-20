@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/header/header.css" />
     <link rel="stylesheet" href="css/main/main.css" />
     <link rel="stylesheet" href="css/main/visual.css" />
-    <link rel="stylesheet" href="css/main/perticipation.css" />
+    <link rel="stylesheet" href="css/main/participation.css" />
     <link rel="stylesheet" href="css/main/share.css" />
     <link rel="stylesheet" href="css/main/agency.css" />
     <link rel="stylesheet" href="css/footer/footer.css" />
@@ -37,7 +37,7 @@
     <script src="js/header.js" defer></script>
     <script src="js/visual.js" defer></script>
     <script src="js/welfare.js" defer></script>
-    <script src="js/perticipation.js" defer></script>
+    <script src="js/participation.js" defer></script>
     <script src="js/share.js" defer></script>
     <script src="js/swiperShare.js" defer></script>
     <script src="js/agency.js" defer></script>
@@ -320,7 +320,7 @@
                   <ul class="news-item-list">
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -328,7 +328,7 @@
                     </li>
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -336,7 +336,7 @@
                     </li>
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -344,7 +344,7 @@
                     </li>
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -352,7 +352,7 @@
                     </li>
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -360,7 +360,7 @@
                     </li>
                     <li>
                       <span tabindex="0" class="icon">공지사항</span>
-                      <dl>
+                      <dl tabindex="0">
                         <dt>8월 복지관 휴관 안내</dt>
                         <dd>0000.00.00</dd>
                       </dl>
@@ -522,14 +522,14 @@
                 </div>
               </div>
               <div class="welfare-contents">
-                <div class="thumb">
+                <div class="thumb" tabindex="0">
                   <img
-                    src="/img/upload/publication/20250116162751_2075.png"
+                    src="img/upload/publication/20250116162751_2075.png"
                     alt="좋은이웃 통권87호"
                   />
                 </div>
                 <div class="info">
-                  <dl>
+                  <dl tabindex="0">
                     <dt>[소식지(좋은이웃)] 좋은이웃 통권87호</dt>
                   </dl>
                 </div>
@@ -537,29 +537,33 @@
             </div>
           </div>
         </div>
-        <div class="main-perticipation">
+        <div class="main-participation">
           <div class="width-custom">
             <div class="main-title">
-              <span
-                ><img
+              <span>
+                <img
                   src="img/main/main_participation/main_participation_icon01.svg"
                   alt="함께참여 아이콘"
                   tabindex="0"
-              /></span>
+                />
+              </span>
               <h2 tabindex="0">함께 <strong>참여</strong>해요</h2>
               <h6 tabindex="0">현재 참여가능한 프로그램을 소개합니다.</h6>
             </div>
-            <div class="swiper swiperPerticipation">
+
+            <div class="swiper swiperParticipation">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="thumb">
                     <img
                       src="img/upload/participation/20250306134234_6201.jpg"
                       alt="시민옹호인포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 1번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>[시민옹호인 프로그램 참여자 모집]</dt>
+                    <dt tabindex="0">[시민옹호인 프로그램 참여자 모집]</dt>
                   </dl>
                 </div>
                 <div class="swiper-slide">
@@ -567,10 +571,14 @@
                     <img
                       src="img/upload/participation/20250401191405_2633.jpg"
                       alt="만족도조사포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 2번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>2025년 자원봉사자 욕구 및 만족도 조사 실시 ★상시★</dt>
+                    <dt tabindex="0">
+                      2025년 자원봉사자 욕구 및 만족도 조사 실시 ★상시★
+                    </dt>
                   </dl>
                 </div>
                 <div class="swiper-slide">
@@ -578,10 +586,12 @@
                     <img
                       src="img/upload/participation/20250407094355_9318.jpg"
                       alt="안심손끝가이드포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 3번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>
+                    <dt tabindex="0">
                       [상시모집]안심 손끝 가이드(나만 아는 점자 표식) 참여자
                       모집 안내
                     </dt>
@@ -592,10 +602,12 @@
                     <img
                       src="img/upload/participation/20250410133639_4050.jpg"
                       alt="네일케어포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 4번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>'네일케어를 부탁해' 4월 참여자 모집</dt>
+                    <dt tabindex="0">'네일케어를 부탁해' 4월 참여자 모집</dt>
                   </dl>
                 </div>
                 <div class="swiper-slide">
@@ -603,10 +615,12 @@
                     <img
                       src="img/upload/participation/20250703100239_3364.jpg"
                       alt="묵자익히기포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 5번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>[상시모집]묵자 익히기 교육생 모집 안내</dt>
+                    <dt tabindex="0">[상시모집]묵자 익히기 교육생 모집 안내</dt>
                   </dl>
                 </div>
                 <div class="swiper-slide">
@@ -614,10 +628,12 @@
                     <img
                       src="img/upload/participation/20250805133148_8117.jpg"
                       alt="돌마리도서관포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 6번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>
+                    <dt tabindex="0">
                       돌마리도서관과 함께하는 친환경 프로그램 편백칩이 들어간
                       양말목 낮잠 베개 만들기
                     </dt>
@@ -628,10 +644,14 @@
                     <img
                       src="img/upload/participation/20250812141948_4419.jpg"
                       alt="모임버스지원포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 7번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>참여주민 모임 3분기 25인승 버스 지원 (접수: ~8.27)</dt>
+                    <dt tabindex="0">
+                      참여주민 모임 3분기 25인승 버스 지원 (접수: ~8.27)
+                    </dt>
                   </dl>
                 </div>
                 <div class="swiper-slide">
@@ -639,16 +659,28 @@
                     <img
                       src="img/upload/participation/20250306134234_6201.jpg"
                       alt="시민옹호인포스터"
+                      tabindex="0"
+                      aria-label="총 8장의 슬라이드 중 8번째 슬라이드입니다."
                     />
                   </div>
                   <dl>
-                    <dt>[시민옹호인 프로그램 참여자 모집]</dt>
+                    <dt tabindex="0">[시민옹호인 프로그램 참여자 모집]</dt>
                   </dl>
                 </div>
               </div>
+              <div class="swiper-navi">
+                <div
+                  class="participation-prev custom-prev"
+                  aria-label="슬라이드 이전 버튼"
+                  tabindex="-1"
+                ></div>
+                <div
+                  class="participation-next custom-next"
+                  aria-label="슬라이드 다음 버튼"
+                  tabindex="-1"
+                ></div>
+              </div>
             </div>
-            <div class="per-custom-prev"></div>
-            <div class="per-custom-next"></div>
           </div>
         </div>
         <div class="main-share">
@@ -682,10 +714,12 @@
                         <img
                           src="img/upload/share/gallery/20250630135502_3478.jpg"
                           alt="2025장애인돌봄휴가제"
+                          tabindex="0"
+                          aria-label="총 5장의 갤러리 슬라이드 중 1번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>2025장애인돌봄휴가제</dt>
+                        <dt tabindex="0">2025장애인돌봄휴가제</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -693,10 +727,14 @@
                         <img
                           src="img/upload/share/gallery/20250630141632_9867.jpg"
                           alt="1인가구 건강지원[우리동네 예체능 실시]"
+                          tabindex="0"
+                          aria-label="총 5장의 갤러리 슬라이드 중 2번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>1인가구 건강지원[우리동네 예체능 실시]</dt>
+                        <dt tabindex="0">
+                          1인가구 건강지원[우리동네 예체능 실시]
+                        </dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -704,10 +742,12 @@
                         <img
                           src="img/upload/share/gallery/20250630145938_5858.jpg"
                           alt="1인가구 요리교실[맛 잇는 식탁]진행"
+                          tabindex="0"
+                          aria-label="총 5장의 갤러리 슬라이드 중 3번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>1인가구 요리교실[맛 잇는 식탁]진행</dt>
+                        <dt tabindex="0">1인가구 요리교실[맛 잇는 식탁]진행</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -715,10 +755,14 @@
                         <img
                           src="img/upload/share/gallery/20250630161302_1012.jpg"
                           alt="1인가구자조모임[도란도란][한우리]활동"
+                          tabindex="0"
+                          aria-label="총 5장의 갤러리 슬라이드 중 4번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>1인가구자조모임[도란도란][한우리]활동</dt>
+                        <dt tabindex="0">
+                          1인가구자조모임[도란도란][한우리]활동
+                        </dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -726,10 +770,14 @@
                         <img
                           src="img/upload/share/gallery/20250702124730_7844.jpg"
                           alt="함께라서 힘이되는 좋은 이웃 [SG]서울보증보험"
+                          tabindex="0"
+                          aria-label="총 5장의 갤러리 슬라이드 중 5번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>함께라서 힘이되는 좋은 이웃 [SG]서울보증보험</dt>
+                        <dt tabindex="0">
+                          함께라서 힘이되는 좋은 이웃 [SG]서울보증보험
+                        </dt>
                       </dl>
                     </div>
                   </div>
@@ -743,10 +791,14 @@
                         <img
                           src="img/upload/share/video/20250520152020_2331.png"
                           alt="송파구 장애인축제"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 1번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>서포터즈 취재일기! 송파구 장애인축제 다녀오다!!</dt>
+                        <dt tabindex="0">
+                          서포터즈 취재일기! 송파구 장애인축제 다녀오다!!
+                        </dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -754,10 +806,12 @@
                         <img
                           src="img/upload/share/video/20250424112555_4252.png"
                           alt="장애인돌봄가족휴가제"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 2번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>
+                        <dt tabindex="0">
                           서시복 2025년 장애인돌봄가족휴가제 참여가정 추첨 결과
                         </dt>
                       </dl>
@@ -767,10 +821,12 @@
                         <img
                           src="img/upload/share/video/20241223163149_1215.jpg"
                           alt="2025년 사업설명회 라이브"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 3번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>2025년 사업설명회 라이브</dt>
+                        <dt tabindex="0">2025년 사업설명회 라이브</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -778,10 +834,12 @@
                         <img
                           src="img/upload/share/video/20241216115515_2508.png"
                           alt="조향사 양성교육 이야기"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 4번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>
+                        <dt tabindex="0">
                           2Z(투지) 밴드와 함께한 시각장애인 조향사 양성교육
                           이야기 속으로!!
                         </dt>
@@ -792,10 +850,12 @@
                         <img
                           src="img/upload/share/video/20241104141120_1661.jpg"
                           alt="환경공동체 '마을환경지킴이"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 5번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>
+                        <dt tabindex="0">
                           [2024] 시각장애인, 비장애인 주민 환경공동체
                           '마을환경지킴이'
                         </dt>
@@ -806,10 +866,14 @@
                         <img
                           src="img/upload/share/video/20240919212448_1358.jpg"
                           alt="스몰스파크"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 6번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>2024 스몰스파크, 풀라이트 팀을 소개합니다!</dt>
+                        <dt tabindex="0">
+                          2024 스몰스파크, 풀라이트 팀을 소개합니다!
+                        </dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -817,10 +881,14 @@
                         <img
                           src="img/upload/share/video/20240723153303_4724.png"
                           alt="실습생과 함께하는 건강체조"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 7번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>실습생과 함께하는 건강체조 "시원해GYM" 영상</dt>
+                        <dt tabindex="0">
+                          실습생과 함께하는 건강체조 "시원해GYM" 영상
+                        </dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -828,10 +896,14 @@
                         <img
                           src="img/upload/share/video/20240718115813_1966.png"
                           alt="복지관 이용자 휴게실 이용"
+                          tabindex="0"
+                          aria-label="총 8장의 동영상 슬라이드 중 8번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>복지관 이용자 휴게실 이용 및 수칙 안내 영상</dt>
+                        <dt tabindex="0">
+                          복지관 이용자 휴게실 이용 및 수칙 안내 영상
+                        </dt>
                       </dl>
                     </div>
                   </div>
@@ -845,10 +917,12 @@
                         <img
                           src="img/upload/share/sharing/20240905114331_9606.jpg"
                           alt="함께하는 마음, 중소기업중앙회"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 1번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>함께하는 마음, 중소기업중앙회</dt>
+                        <dt tabindex="0">함께하는 마음, 중소기업중앙회</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -856,10 +930,12 @@
                         <img
                           src="img/upload/share/sharing/20250312181710_9346.png"
                           alt="1월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 2번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>1월 후원소식</dt>
+                        <dt tabindex="0">1월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -867,10 +943,12 @@
                         <img
                           src="img/upload/share/sharing/20250320114719_2092.png"
                           alt="2월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 3번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>2월 후원소식</dt>
+                        <dt tabindex="0">2월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -878,10 +956,12 @@
                         <img
                           src="img/upload/share/sharing/20250414171350_1453.png"
                           alt="3월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 4번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>3월 후원소식</dt>
+                        <dt tabindex="0">3월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -889,10 +969,12 @@
                         <img
                           src="img/upload/share/sharing/20250523115613_8529.png"
                           alt="4월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 5번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>4월 후원소식</dt>
+                        <dt tabindex="0">4월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -900,10 +982,12 @@
                         <img
                           src="img/upload/share/sharing/20250617141901_1106.png"
                           alt="5월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 6번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>5월 후원소식</dt>
+                        <dt tabindex="0">5월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -911,10 +995,12 @@
                         <img
                           src="img/upload/share/sharing/20250723141520_2842.png"
                           alt="6월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 7번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>6월 후원소식</dt>
+                        <dt tabindex="0">6월 후원소식</dt>
                       </dl>
                     </div>
                     <div class="swiper-slide">
@@ -922,18 +1008,30 @@
                         <img
                           src="img/upload/share/sharing/20250804134955_5582.jpg"
                           alt="7월 후원소식"
+                          tabindex="0"
+                          aria-label="총 9장의 나눔소식 슬라이드 중 8번째 슬라이드입니다."
                         />
                       </div>
                       <dl>
-                        <dt>7월 후원소식</dt>
+                        <dt tabindex="0">7월 후원소식</dt>
                       </dl>
                     </div>
                   </div>
                 </div>
               </li>
             </ul>
-            <div class="per-custom-prev-2"></div>
-            <div class="per-custom-next-2"></div>
+            <div class="swiper-navi">
+              <div
+                class="share-prev custom-prev"
+                aria-label="슬라이드 이전 버튼"
+                tabindex="-1"
+              ></div>
+              <div
+                class="share-next custom-next"
+                aria-label="슬라이드 다음 버튼"
+                tabindex="-1"
+              ></div>
+            </div>
           </div>
         </div>
         <div class="main-business">
@@ -1020,8 +1118,8 @@
             <ul class="event-list">
               <li>
                 <div class="main-title">
-                  <h4>후원안내</h4>
-                  <p>
+                  <h4 tabindex="0">후원안내</h4>
+                  <p tabindex="0">
                     여러분의 따뜻한 마음이 세상을 <br class="mo" />아릅답게
                     바꿉니다.
                   </p>
@@ -1032,8 +1130,8 @@
               </li>
               <li>
                 <div class="main-title">
-                  <h4>자원봉사 안내</h4>
-                  <p>
+                  <h4 tabindex="0">자원봉사 안내</h4>
+                  <p tabindex="0">
                     여러분의 사랑으로 <br class="mo" />함께 희망을 만들어갑니다.
                   </p>
                   <a href="#" title="링크이동" class="more-btn"
@@ -1047,11 +1145,14 @@
         <div class="main-agency">
           <div class="width-custom">
             <div class="main-title">
-              <h3>함께하는 기관</h3>
+              <h3 tabindex="0">함께하는 기관</h3>
               <div class="swiper-navi">
-                <div class="agency-prev custom-prev"></div>
-                <div class="agency-stop-play custom-stop-play"></div>
-                <div class="agency-next custom-next"></div>
+                <div class="agency-prev custom-prev" tabindex="-1"></div>
+                <div
+                  class="agency-stop-play custom-stop-play"
+                  tabindex="-1"
+                ></div>
+                <div class="agency-next custom-next" tabindex="-1"></div>
               </div>
             </div>
             <div class="swiper swiperAgency">
@@ -1109,7 +1210,7 @@
                 <div class="swiper-slide">
                   <div class="thumb">
                     <img
-                      src="img/main/main_agency/main_agency_logo06.svg"
+                      src="img/main/main_agency/main_agency_logo06.png"
                       alt="국민체육진흥공단"
                       tabindex="0"
                       aria-label="총 9장의 슬라이드 중 6번째 슬라이드입니다."
@@ -1129,7 +1230,7 @@
                 <div class="swiper-slide">
                   <div class="thumb">
                     <img
-                      src="img/main/main_agency/main_agency_logo08.svg"
+                      src="img/main/main_agency/main_agency_logo08.png"
                       alt="송파구시설관리공단"
                       tabindex="0"
                       aria-label="총 9장의 슬라이드 중 8번째 슬라이드입니다."
@@ -1169,15 +1270,15 @@
           <div class="top">
             <h2 class="logo">
               <a href="#"
-                ><img src="img/logo/hd_logo.svg" alt="로고 이미지"
+                ><img src="img/logo/hd_logo.svg" alt="로고 이미지" tabindex="0"
               /></a>
             </h2>
             <ul class="link-list">
-              <li><a href="#">이용약관</a></li>
-              <li>
+              <li tabindex="0"><a href="#">이용약관</a></li>
+              <li tabindex="0">
                 <a href="#"><strong>개인정보처리방침</strong></a>
               </li>
-              <li><a href="#">이메일주소 무단수집 거부</a></li>
+              <li tabindex="0"><a href="#">이메일주소 무단수집 거부</a></li>
             </ul>
           </div>
           <div class="agree">
@@ -1186,7 +1287,7 @@
                 <li>
                   <dl>
                     <dt tabindex="0">이용안내</dt>
-                    <dd>
+                    <dd tabindex="0">
                       <a href="#">02-422-8108</a>
                     </dd>
                   </dl>
@@ -1194,7 +1295,7 @@
                 <li>
                   <dl>
                     <dt tabindex="0">후원안내</dt>
-                    <dd>
+                    <dd tabindex="0">
                       <a href="#">02-3433-3868</a>
                     </dd>
                   </dl>
@@ -1208,19 +1309,27 @@
             </div>
             <ul class="black-list">
               <li>
-                <a href="#" target="_blank" title="카카오톡 외부링크"
+                <a
+                  href="#"
+                  target="_blank"
+                  title="카카오톡 외부링크"
+                  tabindex="0"
                   ><img
                     src="img/footer/footer_icon01.svg"
                     alt="카카오톡 아이콘"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank" title="유튜브 외부링크"
+                <a href="#" target="_blank" title="유튜브 외부링크" tabindex="0"
                   ><img src="img/footer/footer_icon02.svg" alt="유튜브 아이콘"
                 /></a>
               </li>
               <li>
-                <a href="#" target="_blank" title="네이버 블로그 외부링크"
+                <a
+                  href="#"
+                  target="_blank"
+                  title="네이버 블로그 외부링크"
+                  tabindex="0"
                   ><img
                     src="img/footer/footer_icon04.png"
                     alt="네이버 블로그 아이콘"
@@ -1228,7 +1337,10 @@
               </li>
               <li>
                 <a href="#" target="_blank" title="해피빈 외부링크"
-                  ><img src="img/footer/footer_icon03.png" alt="해피빈 아이콘"
+                  ><img
+                    src="img/footer/footer_icon03.png"
+                    alt="해피빈 아이콘"
+                    tabindex="0"
                 /></a>
               </li>
             </ul>
