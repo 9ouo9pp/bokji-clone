@@ -44,18 +44,20 @@
   font-size: 140%;
   font-weight: 600;
   letter-spacing: -0.08em;
+  opacity: 0;
 }
 
 .visual-txt-wrap h6 {
   font-size: 60%;
   font-weight: 200;
+  opacity: 0;
 }
 
 .swiperVisual .swiper-slide-active .visual-txt-wrap h2 {
-  animation: fadeInUp 0.8s ease forwards;
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 .swiperVisual .swiper-slide-active .visual-txt-wrap h6 {
-  animation: fadeInUp 0.9s ease forwards;
+  animation: fadeInUp 0.9s ease-out forwards;
 }
 
 .swiperVisual .swiper-slide:nth-of-type(1) span {
@@ -71,7 +73,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
   100% {
     opacity: 1;
