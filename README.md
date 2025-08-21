@@ -1,34 +1,38 @@
-📝 프로젝트 소개
-서울시각장애인복지관 웹사이트 리뉴얼 프로젝트
 
 <div align= "center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0072bc&height=120&text=서울시각장애인복지관&animation=twinkling&fontColor=ffffff&fontSize=50" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=fff2f7&height=120&text=서울시각장애인복지관%20클론코딩&fontColor=333&fontSize=50" />
+<div align="center">
 </div>
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;">  </h2>
 
 <div style="font-weight: 700; font-size: 15px; text-align: left; color: #282d33; ">
-
-이 프로젝트는 기존 서울시각장애인복지관 웹사이트를 웹 접근성과 시멘틱 마크업을 강화하여 모든 사용자가 쉽게 이용할 수 있도록 리뉴얼하는 것을 목표로 합니다.
-<br></li></li> 기존 웹사이트의 한정적인 접근성 요소를 개선하고, 키보드 및 스크린리더 사용자가 웹페이지를 효율적으로 탐색할 수 있는 구조를 구축하는 데 집중했습니다.
-<br></li><br></li><li> 또한, 모바일 퍼스트(Mobile First) 디자인 접근법을 적용하여 다양한 디바이스 환경에서도 최적의 사용자 경험을 제공하고자 했습니다. 각 페이지 섹션이 유기적으로 연결되도록 재구성하여 정보 탐색의 자연스러운 흐름을 유도했습니다.
-<br></li>
-
+이 프로젝트는 서울시각장애인복지관 웹사이트를 클론 코딩하여 웹사이트 제작 기술을 학습하는 것을 목표로 합니다. 원본 웹사이트의 HTML, CSS, JavaScript 코드를 분석하고 직접 구현하는 과정을 통해 웹 표준, 웹 접근성, 시맨틱 마크업, 반응형 디자인 등의 개념을 실습했습니다.<br /><br />
+<li>웹 접근성 (aria-label, tabindex 사용)</li><br />
+<li>시맨틱 마크업 (nav, ul, li, dl, dt, dd와 같은 의미 있는 태그를 사용)</li><br />
+<li>반응형 웹 디자인 구현</li><br />
+<li>모바일 퍼스트 접근법 적용</li>
+<br /><br />
 </div>
-
-:calendar: Project period
-프로젝트 기간
-
-<p>
-🔸 <b> 2025-08-17 ~ 2025-08-20</b>
-</p><br/>
-
-🌱 원본 사이트
-<span>
-<a href="https://bokji.or.kr/" target="_blank">
-🔹 서울시각장애인복지관 웹사이트 바로가기
-</a>
-</span><br/><br/>
+        <h2>
+    :calendar:
+    Project period
+  </h2>
+  <h3>
+    프로젝트 기간
+  </h3>
+  <p>
+    🔸 <b> 25-08-17 ~ 25-08-20</b>
+  </p><br/>
+            <h2>
+        🌱원본 사이트
+    </h2>
+    <span>
+        <a href="https://bokji.or.kr/" target="_blank">
+            🔹 서울시각장애인복지관 사이트 바로가기
+        </a>
+    </span><br/>
+<br/><br/>
 
 <div style="text-align: left;">
 <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br>
@@ -40,14 +44,3 @@
 <br/>
 </div>
 </div>
-
-✔️ 완료된 작업 목록
-목표 진행 여부
-모바일 퍼스트 🟢 완료
-키보드 네비게이션 🟢 완료
-반응형 메인 페이지 🟢 완료
-tabindex 속성 개선 🟢 완료
-aria-label 및 title 속성 적용 🟢 완료
-UI 인터랙션(hover/active) 추가 🟢 완료
-
-Sheets로 내보내기
