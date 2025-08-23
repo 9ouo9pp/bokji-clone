@@ -44,3 +44,36 @@ function createPageButton(page) {
 // 전체 페이지 수
 const totalPages = 5;
 pagination.innerHTML = Array.from({ length: totalPages }, (_, i) => createPageButton(i + 1)).join("");
+
+// =============================================================================
+// 검색어
+// ----- 기존 notices, createNoticeRow, tbody 선언 그대로 사용 -----
+
+// 공지사항 렌더링 함수 (검색, 페이지네이션 모두에서 호출 가능)
+function renderNotices(data) {
+    tbody.innerHTML = data.map(createNoticeRow).join("");
+}
+
+// 최초 전체 목록 출력
+renderNotices(notices);
+
+// -------------------------------------------
+// 검색 기능
+const searchForm = document.querySelector("#search-form");
+
+searchForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // form 전송 막기
+
+    const searchType = document.querySelector("#search-type").value; // title, content, author
+    const keyword = document.querySelector("#search").value.trim().toLowerCase();
+
+    // 검색 실행
+    const filtered = notices.filter(notice =>
+        notice[searchType].toLowerCase().includes(keyword)
+    );
+
+
+
+    // 검색 결과 렌더링
+    renderNotices(filtered);
+});
