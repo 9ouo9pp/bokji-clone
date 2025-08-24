@@ -9,11 +9,11 @@ $(window).on("scroll", function () {
 // menu
 $(".gnb li").mouseenter((e) => {
     e.preventDefault();
-    $(".depth2").stop().fadeIn(400)
+    $(".depth2").stop().fadeIn(200)
     $(".header").addClass("scroll");
 });
 $(".nav").mouseleave((e) => {
     e.preventDefault();
-    $(".depth2").stop().fadeOut(400)
+    $(".depth2").stop().fadeOut(200)
     $(".header").removeClass("scroll");
 });

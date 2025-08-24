@@ -1,7 +1,7 @@
 $(function () {
     // 탭 메뉴 항목을 클릭했을 때
     $(".tab-list a").on("click", function (e) {
-        e.preventDefault(); // ✅ 링크의 기본 동작(새로고침, 페이지 이동 등)을 막습니다.
+        e.preventDefault();
 
         // 모든 탭 메뉴 항목과 모든 콘텐츠에서 'on' 클래스를 제거합니다.
         // li와 a 태그 모두에서 'on' 클래스를 제거하여 활성 상태를 초기화합니다.
